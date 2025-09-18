@@ -4,7 +4,7 @@ var myDate=new Date();
 console.log(myDate);
 
 //for getting past date and time
-var myPastDate=new Date(2020,0,1);
+const myPastDate=new Date(2020,0,1);
 console.log(myPastDate);
 
 //for getting future date and time
@@ -13,7 +13,7 @@ console.log(myPastDate);
 
 var myFutureDate=new Date(2025,11,31);
 console.log(myFutureDate);
-
+ 
 var birthday=new Date(2000,5,15,5,45,45);
 console.log(birthday);
 
@@ -31,3 +31,19 @@ console.log(birthday.getHours());
 
 //get the number of milliseconds since january 1,1970
 console.log(birthday.getTime());
+
+var birthday2=new Date(2000,5,15,5,45,45);
+
+if(birthday == birthday2){
+    console.log("same date");
+}
+else{
+    console.log("different date");
+}
+
+if(birthday.getTime == birthday2.getTime){
+    console.log("same date");
+}
+else{
+    console.log("different date");
+}
